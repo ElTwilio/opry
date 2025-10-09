@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Ole Opry - The Home of Country Music</title>
+    <link rel="canonical" href="https://www.opry.com/">
+    
+    <!-- Segment Analytics.js -->
+    <script>
+      !function(){var i="analytics",analytics=window[i]=window[i]||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window[i].initialized)return window[i][e].apply(window[i],arguments);var n=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");n.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}n.unshift(e);analytics.push(n);return analytics}};for(var n=0;n<analytics.methods.length;n++){var key=analytics.methods[n];analytics[key]=analytics.factory(key)}analytics.load=function(key,n){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.setAttribute("data-global-segment-analytics-key",i);t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r);analytics._loadOptions=n};analytics._writeKey="A6CBSi0OxWOqsbeKwHKqWs1aD6mc8qMV";;analytics.SNIPPET_VERSION="5.2.0";
+      analytics.load("A6CBSi0OxWOqsbeKwHKqWs1aD6mc8qMV");
+      analytics.page();
+      }}();
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', 'Helvetica Neue', sans-serif;
+            color: #fff;
+            line-height: 1.6;
+            background: #000;
+        }
+        
+        /* Improved header styling to match real site */
+        .top-nav {
+            background: #000;
+            padding: 12px 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 25px;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+        }
+        
+        .top-nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+        
+        .top-nav a:hover {
+            color: #5ce1e6;
+        }
+        
+        .main-header {
+            background: rgba(0, 0, 0, 0.95);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .logo {
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: 4px;
+            font-family: 'Arial Black', sans-serif;
+        }
+        
+        .main-nav {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .main-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: color 0.3s;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .main-nav a:hover {
+            color: #5ce1e6;
+        }
+        
+        /* Hero section with real Opry stage image styling */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('https://www.opry.com/wp-content/uploads/2024/09/Opry-100-Homepage-Hero-Desktop-2048x1152.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 40px;
+            max-width: 900px;
+            line-height: 1.1;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .btn {
+            padding: 16px 40px;
+            border: 2px solid #fff;
+            background: transparent;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+        }
+        
+        .btn:hover {
+            background: #fff;
+            color: #000;
+            transform: translateY(-2px);
+        }
+        
+        /* Fixed events section with proper gradient and alignment */
+        .events-section {
+            background: linear-gradient(180deg, #2563eb 0%, #1e40af 100%);
+            padding: 70px 50px;
+        }
+        
+        .section-header {
+            text-align: center;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            font-weight: 900;
+        }
+        
+        .arrow {
+            cursor: pointer;
+            font-size: 28px;
+            transition: transform 0.3s;
+        }
+        
+        .arrow:hover {
+            transform: scale(1.2);
+        }
+        
+        /* Fixed event card grid alignment */
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto 50px;
+        }
+        
+        .event-card {
+            background: #5ce1e6;
+            color: #000;
+            padding: 35px 30px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 320px;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .event-date {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .event-card .btn {
+            border-color: #000;
+            color: #000;
+            padding: 12px 28px;
+            font-size: 11px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        
+        .event-card .btn:hover {
+            background: #000;
+            color: #fff;
+        }
+        
+        .event-title {
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .event-description {
+            font-size: 14px;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+        
+        .view-calendar {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .view-calendar .btn {
+            border-color: #fff;
+        }
+        
+        /* Improved event categories layout */
+        .event-categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1400px;
+            margin: 50px auto 0;
+        }
+        
+        .category-btn {
+            background: #000;
+            color: #fff;
+            padding: 18px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+        }
+        
+        .category-btn:hover {
+            background: #1a1a1a;
+            transform: translateY(-2px);
+        }
+        
+        /* Improved ad section styling */
+        .ad-section {
+            background: linear-gradient(180deg, #1e40af 0%, #1e3a8a 100%);
+            padding: 60px 50px;
+            text-align: center;
+        }
+        
+        .ad-banner {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .ad-banner h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .ad-banner .highlight {
+            font-size: 56px;
+            font-weight: 900;
+            color: #5ce1e6;
+            letter-spacing: 3px;
+        }
+        
+        .ad-banner p {
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        /* Plan Your Visit Section */
+        .plan-visit {
+            background: #b8e6e8;
+            color: #000;
+            padding: 70px 50px;
+        }
+        
+        .plan-visit h2 {
+            text-align: center;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 50px;
+            font-weight: 900;
+        }
+        
+        .visit-options {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .visit-option {
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .visit-option:hover {
+            transform: scale(1.1);
+        }
+        
+        .visit-icon {
+            font-size: 56px;
+            margin-bottom: 20px;
+        }
+        
+        .visit-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            line-height: 1.4;
+        }
+        
+        /* Newsletter Section */
+        .newsletter {
+            background: #000;
+            padding: 70px 50px;
+            text-align: center;
+        }
+        
+        .newsletter h2 {
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+            font-weight: 900;
+        }
+        
+        .newsletter p {
+            font-size: 13px;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 16px 20px;
+            border: none;
+            background: #fff;
+            color: #000;
+            font-size: 14px;
+        }
+        
+        .newsletter-form button {
+            padding: 16px 40px;
+            background: #5ce1e6;
+            color: #000;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            letter-spacing: 1.5px;
+            font-size: 13px;
+        }
+        
+        .newsletter-form button:hover {
+            background: #4ac5ca;
+            transform: translateY(-2px);
+        }
+        
+        /* Improved footer styling */
+        .footer {
+            background: #1e40af;
+            padding: 70px 50px 40px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+            max-width: 1400px;
+            margin: 0 auto 50px;
+        }
+        
+        .footer-section h3 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            font-size: 14px;
+            line-height: 1.9;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .footer-section a:hover {
+            color: #5ce1e6;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            color: #1e40af;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        .social-icon:hover {
+            background: #5ce1e6;
+            transform: scale(1.1);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 11px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* WSM Radio Section */
+        .wsm-section {
+            background: #000;
+            padding: 60px 50px;
+            text-align: center;
+        }
+        
+        .wsm-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .wsm-section h2 {
+            font-size: 42px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+        
+        .wsm-section p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            animation: fadeIn 0.3s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .modal-content {
+            background: #fff;
+            color: #000;
+            margin: 3% auto;
+            padding: 50px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 700px;
+            position: relative;
+            animation: slideDown 0.3s;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+        
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .close-modal {
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #666;
+            line-height: 1;
+        }
+        
+        .close-modal:hover {
+            color: #000;
+        }
+        
+        .modal h2 {
+            color: #000;
+            margin-bottom: 25px;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+        
+        .modal p {
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        
+        .modal .btn {
+            margin-top: 25px;
+            border-color: #000;
+            color: #000;
+        }
+        
+        .modal .btn:hover {
+            background: #000;
+            color: #fff;
+        }
+        
+        .show-list {
+            list-style: none;
+            margin: 25px 0;
+        }
+        
+        .show-list li {
+            padding: 20px;
+            background: #f5f5f5;
+            margin-bottom: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: left;
+        }
+        
+        .show-list li:hover {
+            background: #5ce1e6;
+            transform: translateX(5px);
+        }
+        
+        .show-list strong {
+            display: block;
+            margin-bottom: 8px;
+            color: #000;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .modal input,
+        .modal select {
+            width: 100%;
+            padding: 15px;
+            margin: 12px 0;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .modal input:focus,
+        .modal select:focus {
+            outline: none;
+            border-color: #5ce1e6;
+        }
+        
+        /* Segment Debug Panel */
+        .segment-debug {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: rgba(0, 0, 0, 0.95);
+            color: #5ce1e6;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 350px;
+            font-size: 12px;
+            z-index: 10000;
+            border: 2px solid #5ce1e6;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .segment-debug h4 {
+            margin-bottom: 12px;
+            color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .segment-debug .event-log {
+            max-height: 220px;
+            overflow-y: auto;
+            margin-top: 12px;
+        }
+        
+        .segment-debug .event-item {
+            padding: 8px;
+            margin: 8px 0;
+            background: rgba(92, 225, 230, 0.15);
+            border-left: 3px solid #5ce1e6;
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+        }
+
+        /* Added Opry 100 features section styling */
+        .opry100-section {
+            background: #000;
+            padding: 70px 50px;
+        }
+        
+        .opry100-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .opry100-card {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 40px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .opry100-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .opry100-card.blue-bg {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+        }
+        
+        .opry100-card.dark-bg {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+        
+        .opry100-card.cyan-bg {
+            background: #5ce1e6;
+            color: #000;
+        }
+        
+        .opry100-card h3 {
+            font-size: 42px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        
+        .opry100-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .opry100-card .btn {
+            align-self: flex-start;
+        }
+        
+        .opry100-card.cyan-bg .btn {
+            border-color: #000;
+            color: #000;
+        }
+        
+        .opry100-card.cyan-bg .btn:hover {
+            background: #000;
+            color: #fff;
+        }
+        
+        .featured-artists {
+            background: #000;
+            padding: 70px 50px;
+        }
+        
+        .featured-artists h2 {
+            text-align: center;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 50px;
+            font-weight: 900;
+        }
+        
+        .artists-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .artist-card {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+            aspect-ratio: 1;
+        }
+        
+        .artist-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .artist-card:hover img {
+            transform: scale(1.1);
+        }
+        
+        @media (max-width: 1200px) {
+            .events-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .event-categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .visit-options {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            /* Responsive for Opry 100 features */
+            .opry100-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .artists-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .main-nav {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .events-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .event-categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .visit-options {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .segment-debug {
+                display: none;
+            }
+
+            /* Responsive for Featured Artists */
+            .artists-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <a onclick="trackNavigation('Calendar', 'Top Nav')">CALENDAR</a>
+        <a onclick="openSignupModal()">SIGN UP</a>
+        <a onclick="trackNavigation('Our Brands', 'Top Nav')">OUR BRANDS</a>
+    </div>
+    
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="logo">OPRY</div>
+        <nav>
+            <ul class="main-nav">
+                <li><a onclick="openShowsModal()">SHOWS</a></li>
+                <li><a onclick="openToursModal()">TOURS</a></li>
+                <li><a onclick="trackNavigation('Opry 100', 'Main Nav')">OPRY 100</a></li>
+                <li><a onclick="trackNavigation('Merch', 'Main Nav')">MERCH</a></li>
+                <li><a onclick="trackNavigation('Specials', 'Main Nav')">SPECIALS</a></li>
+                <li><a onclick="trackNavigation('Plan Your Visit', 'Main Nav')">PLAN YOUR VISIT</a></li>
+                <li><a onclick="trackNavigation('Stories', 'Main Nav')">STORIES</a></li>
+                <li><a onclick="trackNavigation('About', 'Main Nav')">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>WELCOME TO THE HOME OF COUNTRY MUSIC</h1>
+        <div class="hero-buttons">
+            <button class="btn" onclick="openShowsModal()">SHOW TICKETS</button>
+            <button class="btn" onclick="openToursModal()">TOUR TICKETS</button>
+        </div>
+    </section>
+    
+    <!-- Events Section -->
+    <section class="events-section">
+        <div class="section-header">
+            <span class="arrow" onclick="trackNavigation('Previous Events', 'Events Section')">←</span>
+            <h2>UPCOMING EVENTS</h2>
+            <span class="arrow" onclick="trackNavigation('Next Events', 'Events Section')">→</span>
+        </div>
+        
+        <div class="events-grid">
+            <div class="event-card" onclick="viewEventDetails('Opry 100 Birthday Show', 'October 8, 2025', 'Wednesday', 'Featuring Dierks Bentley, Sheryl Crow, Vince Gill, Riders In The Sky, and Rhonda Vincent', 'Grand Ole Opry House', 65.00)">
+                <div class="event-date">WEDNESDAY, OCTOBER 8</div>
+                <button class="btn" onclick="event.stopPropagation(); addToCart('Opry 100 Birthday Show', 'October 8, 2025', 'Grand Ole Opry House', 65.00)">GET TICKETS</button>
+                <div class="event-title">OPRY 100 BIRTHDAY SHOW</div>
+                <div class="event-description">
+                    Featuring Dierks Bentley, Sheryl Crow, Vince Gill, Riders In The Sky, and Rhonda Vincent
+                </div>
+            </div>
+            
+            <div class="event-card" onclick="viewEventDetails('Opry Country Classics', 'October 9, 2025', 'Thursday', 'Featuring Crystal Gayle, The Gatlin Brothers, Jeannie Seely, and more to be announced', 'Grand Ole Opry House', 55.00)">
+                <div class="event-date">THURSDAY, OCTOBER 9</div>
+                <button class="btn" onclick="event.stopPropagation(); addToCart('Opry Country Classics', 'October 9, 2025', 'Grand Ole Opry House', 55.00)">GET TICKETS</button>
+                <div class="event-title">OPRY COUNTRY CLASSICS</div>
+                <div class="event-description">
+                    Featuring Crystal Gayle, The Gatlin Brothers, Jeannie Seely, and more to be announced
+                </div>
+            </div>
+            
+            <div class="event-card" onclick="viewEventDetails('Opry 100 Birthday Show', 'October 10, 2025', 'Friday', 'Featuring Shinedown, John Conlee, Connie Harrington, Jillian Jacqueline, The Isaacs, Shy and Rhonda Vincent', 'Grand Ole Opry House', 75.00)">
+                <div class="event-date">FRIDAY, OCTOBER 10</div>
+                <button class="btn" onclick="event.stopPropagation(); addToCart('Opry 100 Birthday Show', 'October 10, 2025', 'Grand Ole Opry House', 75.00)">GET TICKETS</button>
+                <div class="event-title">OPRY 100 BIRTHDAY SHOW</div>
+                <div class="event-description">
+                    Featuring Shinedown, John Conlee, Connie Harrington, Jillian Jacqueline, The Isaacs, Shy and Rhonda Vincent
+                </div>
+            </div>
+        </div>
+        
+        <div class="view-calendar">
+            <button class="btn" onclick="trackNavigation('View Full Calendar', 'Events Section')">VIEW FULL CALENDAR</button>
+        </div>
+        
+        <div class="event-categories">
+            <button class="category-btn" onclick="filterEvents('Opry 100 Birthday')">OPRY 100 BIRTHDAY</button>
+            <button class="category-btn" onclick="filterEvents('Opry Country Christmas')">OPRY COUNTRY CHRISTMAS</button>
+            <button class="category-btn" onclick="filterEvents('Daytime Backstage Tours')">DAYTIME BACKSTAGE TOURS</button>
+            <button class="category-btn" onclick="filterEvents('Opry 100 Honors')">OPRY 100 HONORS</button>
+            <button class="category-btn" onclick="filterEvents('Hallmark Holiday Takeover')">HALLMARK HOLIDAY TAKEOVER</button>
+            <button class="category-btn" onclick="filterEvents('Opry 100 Album')">OPRY 100 ALBUM</button>
+        </div>
+    </section>
+    
+    <!-- Advertisement Section -->
+    <section class="ad-section">
+        <div class="ad-banner">
+            <h3>CELEBRATING</h3>
+            <div class="highlight">100 YEARS</div>
+            <p>OF LEGENDARY PERFORMANCES</p>
+            <button class="btn" onclick="trackNavigation('Learn More Ford', 'Ad Banner')" style="margin-top: 25px;">Learn More</button>
+        </div>
+    </section>
+    
+    <!-- Plan Your Visit Section -->
+    <section class="plan-visit">
+        <h2>PLAN YOUR VISIT</h2>
+        <div class="visit-options">
+            <div class="visit-option" onclick="trackNavigation('Know Before You Go', 'Plan Visit')">
+                <div class="visit-icon">📋</div>
+                <div class="visit-label">KNOW BEFORE YOU GO</div>
+            </div>
+            <div class="visit-option" onclick="trackNavigation('Seating Chart', 'Plan Visit')">
+                <div class="visit-icon">🪑</div>
+                <div class="visit-label">SEATING CHART</div>
+            </div>
+            <div class="visit-option" onclick="trackNavigation('Directions & Parking', 'Plan Visit')">
+                <div class="visit-icon">🚗</div>
+                <div class="visit-label">DIRECTIONS & PARKING</div>
+            </div>
+            <div class="visit-option" onclick="trackNavigation('FAQs', 'Plan Visit')">
+                <div class="visit-icon">❓</div>
+                <div class="visit-label">FAQS</div>
+            </div>
+            <div class="visit-option" onclick="trackNavigation('Shop The Store', 'Plan Visit')">
+                <div class="visit-icon">🛍️</div>
+                <div class="visit-label">SHOP THE STORE</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>STAY UP-TO-DATE</h2>
+        <p>TEXT OPRY TO 81581 FOR OPRY UPDATES DELIVERED TO YOUR PHONE</p>
+        <form class="newsletter-form" id="newsletterForm" onsubmit="handleNewsletterSignup(event)">
+            <input type="email" id="emailInput" placeholder="Email Address" required>
+            <button type="submit">SEND</button>
+        </form>
+    </section>
+    
+    <!-- WSM Radio Section -->
+    <section class="wsm-section">
+        <div class="wsm-content">
+            <h2>TUNE IN, ANY TIME.</h2>
+            <p>Listen live to the station that made us famous. WSM, broadcasting since 1925.</p>
+            <button class="btn" onclick="trackNavigation('Get WSM Mobile App', 'WSM Section')">GET THE WSM MOBILE APP</button>
+        </div>
+    </section>
+
+    <!-- Added Opry 100 Features Section after events section -->
+    <section class="opry100-section">
+        <div class="opry100-grid">
+            <div class="opry100-card blue-bg" onclick="trackOpry100Feature('Opry 100 Birthday')">
+                <h3>OPRY 100<br>BIRTHDAY</h3>
+                <p>Celebrate our 100th "Rhinestone Milestone Birthday" all October with four weeks of birthday shows, plaza parties, special fan activations, and more. If you've ever experienced the Opry this year, now is the time. Because you only turn 100 once, and we're doing it the Opry way.</p>
+                <button class="btn">GET TICKETS</button>
+            </div>
+            
+            <div class="opry100-card dark-bg" onclick="trackOpry100Feature('Rhinestone Milestone')">
+                <h3>OPRY 100<br>RHINESTONE<br>MILESTONE</h3>
+                <p style="font-size: 14px; text-transform: uppercase; letter-spacing: 1.5px;">A BIRTHDAY MONTH CELEBRATION</p>
+                <p style="font-size: 12px; margin-top: 20px;">SPONSORED BY<br><strong style="font-size: 18px;">COUNTRY INN & SUITES • DURANGO BOOTS</strong></p>
+            </div>
+            
+            <div class="opry100-card cyan-bg" onclick="trackOpry100Feature('Opry 100 Album')">
+                <h3>OPRY 100 ALBUM</h3>
+                <p>Opry 100: Country's Greatest Songs is a one-of-a-kind album featuring never-before-released performances—LIVE from the iconic Opry stage. Stream or download the album today and claim your piece of country music history.</p>
+                <button class="btn">PREORDER NOW</button>
+            </div>
+            
+            <div class="opry100-card blue-bg" onclick="trackOpry100Feature('Blake Shelton Live Celebration')">
+                <h3>BLAKE SHELTON<br>HOSTS<br>OPRY 100:<br>A LIVE<br>CELEBRATION</h3>
+                <p style="font-size: 14px; margin-top: 20px;"><strong>MONDAY 9/15</strong><br>NBC • peacock</p>
+                <button class="btn">LEARN MORE</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Added Featured Artists Section -->
+    <section class="featured-artists">
+        <h2>FEATURED ARTISTS</h2>
+        <div class="artists-grid">
+            <div class="artist-card" onclick="trackArtistClick('Artist 1')">
+                <img src="https://www.opry.com/wp-content/uploads/2024/09/Artist-1-600x600.jpg" alt="Featured Artist">
+            </div>
+            <div class="artist-card" onclick="trackArtistClick('Artist 2')">
+                <img src="https://www.opry.com/wp-content/uploads/2024/09/Artist-2-600x600.jpg" alt="Featured Artist">
+            </div>
+            <div class="artist-card" onclick="trackArtistClick('Artist 3')">
+                <img src="https://www.opry.com/wp-content/uploads/2024/09/Artist-3-600x600.jpg" alt="Featured Artist">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo" style="margin-bottom: 25px;">OPRY</div>
+                <p>AN OPRY ENTERTAINMENT GROUP COMPANY</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" onclick="trackSocial('Instagram'); return false;">📷</a>
+                    <a href="#" class="social-icon" onclick="trackSocial('Twitter'); return false;">🐦</a>
+                    <a href="#" class="social-icon" onclick="trackSocial('Facebook'); return false;">f</a>
+                    <a href="#" class="social-icon" onclick="trackSocial('YouTube'); return false;">▶</a>
+                </div>
+                <p style="margin-top: 25px; font-weight: bold;">1-800-SEE-OPRY</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>VENUE ADDRESSES</h3>
+                <p><strong>OPRY HOUSE</strong><br>
+                600 Opry Mills Drive<br>
+                Nashville, Tennessee 37214</p>
+                <p style="margin-top: 20px;"><strong>RYMAN AUDITORIUM</strong><br>
+                116 Rep. John Lewis Way North<br>
+                Nashville, Tennessee 37219</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>AXS BOX OFFICE</h3>
+                <p>8:00 AM - 5:00 PM<br>
+                Hours extended to 7:45 PM on show days</p>
+                <p style="margin-top: 20px;"><strong>OPRY SHOP</strong><br>
+                8:00 AM - 5:00 PM<br>
+                Hours extended to 8:30 PM on show days</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 OPRY | SITE MAP | PRIVACY POLICY | TERMS & CONDITIONS | WEB ACCESSIBILITY</p>
+            <div class="footer-links">
+                <a href="#" onclick="trackNavigation('Specials', 'Footer'); return false;">SPECIALS</a>
+                <a href="#" onclick="trackNavigation('Plan Your Visit', 'Footer'); return false;">PLAN YOUR VISIT</a>
+                <a href="#" onclick="trackNavigation('Stories', 'Footer'); return false;">STORIES</a>
+                <a href="#" onclick="trackNavigation('About', 'Footer'); return false;">ABOUT</a>
+                <a href="#" onclick="trackNavigation('Jobs', 'Footer'); return false;">JOBS</a>
+                <a href="#" onclick="trackNavigation('Archives', 'Footer'); return false;">ARCHIVES</a>
+                <a href="#" onclick="trackNavigation('Production', 'Footer'); return false;">PRODUCTION</a>
+                <a href="#" onclick="trackNavigation('Press', 'Footer'); return false;">PRESS</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Shows Modal -->
+    <div id="showsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('showsModal')">&times;</span>
+            <h2>Upcoming Shows</h2>
+            <p>Browse our upcoming performances at the Grand Ole Opry House and Ryman Auditorium.</p>
+            <ul class="show-list">
+                <li onclick="viewEventDetails('Opry 100 Birthday Show', 'October 8, 2025', 'Wednesday', 'Featuring Dierks Bentley, Sheryl Crow, Vince Gill', 'Grand Ole Opry House', 65.00)">
+                    <strong>Opry 100 Birthday Show</strong>
+                    Wednesday, October 8, 2025 - $65.00
+                </li>
+                <li onclick="viewEventDetails('Opry Country Classics', 'October 9, 2025', 'Thursday', 'Featuring Crystal Gayle, The Gatlin Brothers', 'Grand Ole Opry House', 55.00)">
+                    <strong>Opry Country Classics</strong>
+                    Thursday, October 9, 2025 - $55.00
+                </li>
+                <li onclick="viewEventDetails('Opry 100 Birthday Show', 'October 10, 2025', 'Friday', 'Featuring Shinedown, John Conlee', 'Grand Ole Opry House', 75.00)">
+                    <strong>Opry 100 Birthday Show</strong>
+                    Friday, October 10, 2025 - $75.00
+                </li>
+            </ul>
+            <button class="btn" onclick="closeModal('showsModal')">Close</button>
+        </div>
+    </div>
+    
+    <!-- Tours Modal -->
+    <div id="toursModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('toursModal')">&times;</span>
+            <h2>Backstage Tours</h2>
+            <p>Experience the magic behind the scenes with our exclusive backstage tours.</p>
+            <ul class="show-list">
+                <li onclick="bookTour('Daytime Backstage Tour', 'Grand Ole Opry House', 40.00)">
+                    <strong>Daytime Backstage Tour</strong>
+                    Grand Ole Opry House - $40.00
+                </li>
+                <li onclick="bookTour('Post Show Backstage Tour', 'Grand Ole Opry House', 50.00)">
+                    <strong>Post Show Backstage Tour</strong>
+                    Grand Ole Opry House - $50.00
+                </li>
+                <li onclick="bookTour('Ryman Backstage Tour', 'Ryman Auditorium', 35.00)">
+                    <strong>Ryman Backstage Tour</strong>
+                    Ryman Auditorium - $35.00
+                </li>
+            </ul>
+            <button class="btn" onclick="closeModal('toursModal')">Close</button>
+        </div>
+    </div>
+    
+    <!-- Event Details Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('eventModal')">&times;</span>
+            <div id="eventDetails"></div>
+        </div>
+    </div>
+    
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('signupModal')">&times;</span>
+            <h2>Sign Up for Opry Updates</h2>
+            <p>Join our community and get exclusive access to presales, special offers, and Opry news.</p>
+            <form id="signupForm" onsubmit="handleSignup(event)">
+                <input type="text" id="signupFirstName" placeholder="First Name" required>
+                <input type="text" id="signupLastName" placeholder="Last Name" required>
+                <input type="email" id="signupEmail" placeholder="Email Address" required>
+                <input type="tel" id="signupPhone" placeholder="Phone Number (optional)">
+                <select id="signupInterest">
+                    <option value="">Select Your Interest</option>
+                    <option value="Grand Ole Opry">Grand Ole Opry</option>
+                    <option value="Ryman Auditorium">Ryman Auditorium</option>
+                    <option value="Ole Red">Ole Red</option>
+                    <option value="All Venues">All Venues</option>
+                </select>
+                <button type="submit" class="btn" style="width: 100%; margin-top: 25px;">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Segment Debug Panel -->
+    <div class="segment-debug" id="debugPanel">
+        <h4>Segment Events (Demo)</h4>
+        <div>User ID: <span id="userId">Anonymous</span></div>
+        <div>Events Tracked: <span id="eventCount">0</span></div>
+        <div class="event-log" id="eventLog"></div>
+    </div>
+    
+    <script>
+        let eventCount = 0;
+        let currentUserId = 'Anonymous';
+        let sessionStartTime = Date.now();
+        
+        function getDeviceType() {
+            const ua = navigator.userAgent;
+            if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+                return "tablet";
+            }
+            if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+                return "mobile";
+            }
+            return "desktop";
+        }
+        
+        // Function to log events to debug panel
+        function logEvent(eventName, properties) {
+            eventCount++;
+            document.getElementById('eventCount').textContent = eventCount;
+            
+            const eventLog = document.getElementById('eventLog');
+            const eventItem = document.createElement('div');
+            eventItem.className = 'event-item';
+            eventItem.textContent = `${eventName}`;
+            eventLog.insertBefore(eventItem, eventLog.firstChild);
+            
+            // Keep only last 5 events
+            while (eventLog.children.length > 5) {
+                eventLog.removeChild(eventLog.lastChild);
+            }
+        }
+        
+        function getSessionContext() {
+            return {
+                session_id: 'session_' + sessionStartTime,
+                session_duration_seconds: Math.round((Date.now() - sessionStartTime) / 1000),
+                page_url: window.location.href,
+                page_path: window.location.pathname,
+                page_title: document.title,
+                referrer: document.referrer || 'direct',
+                device_type: getDeviceType(),
+                screen_width: window.screen.width,
+                screen_height: window.screen.height,
+                timestamp: new Date().toISOString()
+            };
+        }
+        
+        // Track Navigation with location context
+        function trackNavigation(item, location) {
+            analytics.track('Navigation Clicked', {
+                navigation_item: item,
+                navigation_location: location,
+                ...getSessionContext()
+            });
+            logEvent('Navigation Clicked', { item, location });
+            return false;
+        }
+        
+        function viewEventDetails(eventName, eventDate, dayOfWeek, description, venue, price) {
+            const productId = eventName.toLowerCase().replace(/\s+/g, '_') + '_' + eventDate.replace(/\s+/g, '_');
+            
+            analytics.track('Product Viewed', {
+                product_id: productId,
+                sku: productId,
+                name: eventName,
+                category: 'Event Ticket',
+                brand: venue === 'Ryman Auditorium' ? 'Ryman' : 'Grand Ole Opry',
+                variant: dayOfWeek,
+                price: price,
+                currency: 'USD',
+                url: window.location.href,
+                // Opry-specific properties
+                event_name: eventName,
+                event_date: eventDate,
+                day_of_week: dayOfWeek,
+                venue: venue,
+                description: description,
+                ...getSessionContext()
+            });
+            logEvent('Product Viewed', { eventName, venue, price });
+            
+            // Show modal with event details
+            const modal = document.getElementById('eventModal');
+            const detailsDiv = document.getElementById('eventDetails');
+            detailsDiv.innerHTML = `
+                <h2>${eventName}</h2>
+                <p><strong>Date:</strong> ${dayOfWeek}, ${eventDate}</p>
+                <p><strong>Venue:</strong> ${venue}</p>
+                <p><strong>Price:</strong> $${price.toFixed(2)}</p>
+                <p>${description}</p>
+                <button class="btn" onclick="addToCart('${eventName}', '${eventDate}', '${venue}', ${price})">Add to Cart - $${price.toFixed(2)}</button>
+                <button class="btn" onclick="completeOrder('${eventName}', '${eventDate}', '${venue}', ${price})" style="margin-left: 10px; background: #5ce1e6; color: #000;">Complete Purchase</button>
+            `;
+            modal.style.display = 'block';
+        }
+        
+        function addToCart(eventName, eventDate, venue, price) {
+            const cartId = 'cart_' + Date.now();
+            const productId = eventName.toLowerCase().replace(/\s+/g, '_') + '_' + eventDate.replace(/\s+/g, '_');
+            
+            analytics.track('Product Added', {
+                cart_id: cartId,
+                product_id: productId,
+                sku: productId,
+                name: eventName,
+                category: 'Event Ticket',
+                brand: venue === 'Ryman Auditorium' ? 'Ryman' : 'Grand Ole Opry',
+                variant: eventDate,
+                price: price,
+                quantity: 1,
+                currency: 'USD',
+                position: 1,
+                url: window.location.href,
+                // Opry-specific properties
+                event_name: eventName,
+                event_date: eventDate,
+                venue: venue,
+                ...getSessionContext()
+            });
+            logEvent('Product Added', { eventName, price });
+            
+            alert(`✓ Added to cart: ${eventName}\nDate: ${eventDate}\nVenue: ${venue}\nPrice: $${price.toFixed(2)}\n\n[DEMO NOTE] This "Product Added" event enables:\n• Real-time cart abandonment campaigns\n• Cross-sell recommendations\n• Revenue attribution across 16 brands`);
+            closeModal('eventModal');
+        }
+        
+        function completeOrder(eventName, eventDate, venue, price) {
+            const orderId = 'order_' + Date.now();
+            const productId = eventName.toLowerCase().replace(/\s+/g, '_') + '_' + eventDate.replace(/\s+/g, '_');
+            
+            analytics.track('Order Completed', {
+                order_id: orderId,
+                total: price,
+                revenue: price,
+                shipping: 0,
+                tax: price * 0.0925, // TN sales tax
+                currency: 'USD',
+                products: [{
+                    product_id: productId,
+                    sku: productId,
+                    name: eventName,
+                    price: price,
+                    quantity: 1,
+                    category: 'Event Ticket',
+                    brand: venue === 'Ryman Auditorium' ? 'Ryman' : 'Grand Ole Opry',
+                    variant: eventDate,
+                    url: window.location.href
+                }],
+                // Opry-specific properties
+                venue: venue,
+                event_date: eventDate,
+                customer_type: currentUserId === 'Anonymous' ? 'Guest' : 'Registered',
+                ...getSessionContext()
+            });
+            
+            logEvent('Order Completed', { eventName, revenue: price });
+            
+            alert(`✓ Order Confirmed!\n\nOrder ID: ${orderId}\nEvent: ${eventName}\nTotal: $${price.toFixed(2)}\n\n[DEMO NOTE] This "Order Completed" event enables:\n• LTV calculation and tracking\n• Repeat purchase rate measurement and optimization\n• Revenue attribution by venue/brand\n• Customer segmentation by purchase behavior`);
+            closeModal('eventModal');
+        }
+        
+        // Filter Events by Category
+        function filterEvents(category) {
+            analytics.track('Products Searched', {
+                query: category,
+                search_type: 'category_filter',
+                category: category,
+                ...getSessionContext()
+            });
+            logEvent('Products Searched', { category });
+            alert(`Filtering events by: ${category}\n\n[DEMO NOTE] This tracks user preferences for:\n• Personalized event recommendations\n• Audience segmentation by interest\n• Content personalization`);
+        }
+        
+        function bookTour(tourName, venue, price) {
+            const productId = tourName.toLowerCase().replace(/\s+/g, '_');
+            
+            // Track as Product Added first
+            analytics.track('Product Added', {
+                cart_id: 'cart_' + Date.now(),
+                product_id: productId,
+                sku: productId,
+                name: tourName,
+                category: 'Tour',
+                brand: venue === 'Ryman Auditorium' ? 'Ryman' : 'Grand Ole Opry',
+                price: price,
+                quantity: 1,
+                currency: 'USD',
+                url: window.location.href,
+                venue: venue,
+                ...getSessionContext()
+            });
+            
+            logEvent('Product Added (Tour)', { tourName, venue });
+            
+            alert(`Booking: ${tourName}\nVenue: ${venue}\nPrice: $${price.toFixed(2)}\n\n[DEMO NOTE] Tour bookings are tracked as products for:\n• Cross-brand engagement tracking\n• Upsell opportunities (tour + show packages)\n• Revenue attribution`);
+            closeModal('toursModal');
+        }
+        
+        // Track Social Media Clicks with platform details
+        function trackSocial(platform) {
+            analytics.track('Social Link Clicked', {
+                social_network: platform,
+                link_location: 'Footer',
+                ...getSessionContext()
+            });
+            logEvent('Social Link Clicked', { platform });
+            return false;
+        }
+        
+        function handleNewsletterSignup(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById('emailInput').value;
+            const userId = 'user_' + email.replace(/[^a-zA-Z0-9]/g, '_');
+            
+            // Segment Identify Call - Creates unified customer profile
+            analytics.identify(userId, {
+                email: email,
+                name: email.split('@')[0], // Extract name from email
+                created_at: new Date().toISOString(),
+                // Opry-specific traits
+                signup_source: 'Newsletter Form',
+                signup_date: new Date().toISOString(),
+                interest_category: 'Opry Updates',
+                communication_preference: 'Email',
+                customer_type: 'Lead',
+                lifecycle_stage: 'Subscriber',
+                marketing_opt_in: true,
+                // Business metrics
+                total_lifetime_value: 0,
+                total_orders: 0,
+                preferred_venue: 'Unknown',
+                favorite_artists: []
+            });
+            
+            currentUserId = email;
+            document.getElementById('userId').textContent = email;
+            
+            // Track the signup event
+            analytics.track('Email Captured', {
+                email: email,
+                form_name: 'Newsletter Signup',
+                form_location: 'Newsletter Section',
+                subscription_type: 'General Updates',
+                ...getSessionContext()
+            });
+            
+            logEvent('Email Captured + Identify', { email });
+            
+            alert(`✓ Thank you for signing up!\n\nEmail: ${email}\n\n[DEMO NOTE] This demonstrates:\n• Identity resolution using email as key identifier\n• Unified customer profile creation\n• Cross-channel activation (email, ads, website)\n• Foundation for personalization across 16 brands`);
+            document.getElementById('newsletterForm').reset();
+            
+            return false;
+        }
+        
+        function handleSignup(event) {
+            event.preventDefault();
+            
+            const firstName = document.getElementById('signupFirstName').value;
+            const lastName = document.getElementById('signupLastName').value;
+            const email = document.getElementById('signupEmail').value;
+            const phone = document.getElementById('signupPhone').value;
+            const interest = document.getElementById('signupInterest').value;
+            const userId = 'user_' + email.replace(/[^a-zA-Z0-9]/g, '_');
+            
+            // Rich Identify Call following Segment spec
+            analytics.identify(userId, {
+                // Standard Segment traits
+                email: email,
+                phone: phone,
+                firstName: firstName,
+                lastName: lastName,
+                name: `${firstName} ${lastName}`,
+                created_at: new Date().toISOString(),
+                // Opry-specific traits
+                preferred_venue: interest,
+                venue_interest: interest,
+                signup_source: 'Signup Modal',
+                signup_date: new Date().toISOString(),
+                customer_type: 'Registered',
+                communication_preference: phone ? 'Email and SMS' : 'Email',
+                lifecycle_stage: 'Subscriber',
+                marketing_opt_in: true,
+                // Business metrics for segmentation
+                total_lifetime_value: 0,
+                total_orders: 0,
+                first_purchase_date: null,
+                last_purchase_date: null,
+                customer_segment: 'New',
+                favorite_artists: [],
+                // Context
+                signup_device: getDeviceType(),
+                signup_url: window.location.href
+            });
+            
+            currentUserId = email;
+            document.getElementById('userId').textContent = email;
+            
+            // Track signup completion
+            analytics.track('Signed Up', {
+                email: email,
+                first_name: firstName,
+                last_name: lastName,
+                phone: phone,
+                venue_interest: interest,
+                signup_method: 'Website Form',
+                form_name: 'Account Signup',
+                ...getSessionContext()
+            });
+            
+            logEvent('Signed Up + Identify', { email, interest });
+            
+            alert(`✓ Welcome ${firstName}!\n\nYour account has been created.\n\n[DEMO NOTE] This demonstrates:\n• Identity resolution across 16 Opry brands\n• Rich customer profiles with preferences\n• Unified view for cross-channel campaigns\n• Foundation for increasing repeat purchase rates and customer loyalty`);
+            closeModal('signupModal');
+            document.getElementById('signupForm').reset();
+            
+            return false;
+        }
+        
+        // Modal Functions
+        function openShowsModal() {
+            document.getElementById('showsModal').style.display = 'block';
+            analytics.track('Modal Viewed', {
+                modal_name: 'Shows',
+                modal_type: 'Product Listing',
+                ...getSessionContext()
+            });
+            logEvent('Modal Viewed', { modal: 'Shows' });
+        }
+        
+        function openToursModal() {
+            document.getElementById('toursModal').style.display = 'block';
+            analytics.track('Modal Viewed', {
+                modal_name: 'Tours',
+                modal_type: 'Product Listing',
+                ...getSessionContext()
+            });
+            logEvent('Modal Viewed', { modal: 'Tours' });
+        }
+        
+        function openSignupModal() {
+            document.getElementById('signupModal').style.display = 'block';
+            analytics.track('Modal Viewed', {
+                modal_name: 'Signup',
+                modal_type: 'Registration Form',
+                ...getSessionContext()
+            });
+            logEvent('Modal Viewed', { modal: 'Signup' });
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+        
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        }
+        
+        window.addEventListener('beforeunload', function() {
+            const timeOnPage = Math.round((Date.now() - sessionStartTime) / 1000);
+            analytics.track('Session Completed', {
+                session_duration_seconds: timeOnPage,
+                events_triggered: eventCount,
+                page_url: window.location.href,
+                user_type: currentUserId === 'Anonymous' ? 'Anonymous' : 'Identified',
+                device_type: getDeviceType()
+            });
+        });
+        
+        // Initial page view is tracked by analytics.page() in the snippet
+        console.log('[v0] Segment Analytics initialized - Opry Demo');
+        console.log('[v0] Device Type:', getDeviceType());
+        logEvent('Page Loaded', { url: window.location.href });
+
+        function trackOpry100Feature(featureName) {
+            analytics.track('Promotion Clicked', {
+                promotion_name: featureName,
+                promotion_id: featureName.toLowerCase().replace(/\s+/g, '_'),
+                creative: 'Opry 100 Feature Card',
+                position: 'Opry 100 Section',
+                ...getSessionContext()
+            });
+            logEvent('Promotion Clicked', { featureName });
+            alert(`Viewing: ${featureName}\n\n[DEMO NOTE] Tracks engagement with special Opry 100 content for:\n• Targeted promotional campaigns\n• Content performance measurement\n• Personalized recommendations`);
+        }
+        
+        function trackArtistClick(artistName) {
+            analytics.track('Artist Viewed', {
+                artist_name: artistName,
+                content_type: 'Artist Profile',
+                section: 'Featured Artists',
+                ...getSessionContext()
+            });
+            logEvent('Artist Viewed', { artistName });
+        }
+    </script>
+</body>
+</html>
